@@ -1,10 +1,9 @@
 package hiber.service;
 
 import hiber.model.Car;
-import hiber.model.User;
+import org.springframework.transaction.annotation.Transactional;
 
+@Transactional
 public interface CarService {
     void add(Car car);
-
-    User getUserAndCar(String model, int series);
 }
