@@ -6,5 +6,4 @@ import hiber.model.User;
 public interface CarDao {
     void add(Car car);
 
-    User getUserAndCar(String model, int series);
 }
